@@ -2,6 +2,7 @@ from openpyxl import *
 from tkinter import *
 
 # This will open an excel sheet
+#CHANGE TO VALID WORKBOOK LOCATION
 wb = load_workbook('C:\\Users\\uC244458\\RADZs\\PythonStuff.xlsx')
 
 # This corresponds with the actual excel sheet
@@ -35,6 +36,7 @@ def insert():
     sheet.cell(row=current_row + 1, column=2).value = password_field.get()
 
     # save the file
+    #CHANGE TO VALID WORKBOOK LOCATION
     wb.save('C:\\Users\\uC244458\\RADZs\\PythonStuff.xlsx')
 
     name_field.focus_set()
